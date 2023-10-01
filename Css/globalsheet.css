@@ -1,0 +1,217 @@
+:root {
+  --primary-color: #ffff;
+  --secondary-color: #154841;
+  --accent-color: #1b5e55;
+  --white-color: #ffff;
+  --card-color: #00985b;
+  --bg-dark-green: #1a5c53;
+  --gradient-color-1: #01985c;
+  --gradient-color-2: #7ecdaa;
+  --light-green-color: #8daeaa;
+}
+.gradient-1 {
+  background: linear-gradient(
+    to right,
+    var(--gradient-color-1),
+    var(--gradient-color-2)
+  );
+}
+.bg-dark-green {
+  background-color: var(--bg-dark-green);
+}
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}
+.container {
+  max-width: 1330px;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: var(--accent-color);
+}
+.btn-1 {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 600;
+  border-radius: 0%;
+}
+.btn-2 {
+  padding: 7px 34px;
+}
+.btn-3 {
+  padding: 14px 50px;
+}
+.btn-4 {
+  padding: 15px 25px;
+  font-weight: 300;
+}
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+p {
+  color: var(--white-color);
+}
+p {
+  font-size: clamp(12px, 3vw, 17px);
+}
+h2 {
+  font-size: (30px, 3vw, 48px);
+}
+
+/*navbar*/
+.navbar-wrapper {
+  border-bottom: 3px solid var(--accent-color);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  opacity: 1;
+  border: 0.5px solid var(--white-color);
+}
+.carousel-indicators .active {
+  background-color: var(--accent-color);
+}
+
+.carousel-control-prev {
+  left: 41%;
+  bottom: -86%;
+}
+.carousel-control-next {
+  right: 41%;
+  bottom: -86%;
+}
+/* .carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+
+  max-width: 50%;
+} */
+
+/*content*/
+.content-wrapper {
+  background-image: url(../Assets/img/background.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/*banner-1*/
+.banner-1 {
+  padding: 85px 155px;
+}
+.content-wrapper .container .banner-1 > div:first-child > div:nth-child(2) {
+  background-color: var(--secondary-color);
+  margin-left: 42%;
+  margin-top: 7%;
+}
+.content-wrapper
+  .container
+  .banner-1
+  > div:first-child
+  > div:nth-child(2)
+  > div {
+  padding: 80px 95px 70px 80px;
+}
+/*services*/
+#services {
+  padding: 5.5rem 0;
+}
+#services .card {
+  padding: 4rem 0.5rem 7rem 0.5rem;
+}
+/*vision*/
+#vision {
+  padding-top: 11rem;
+  padding-bottom: 10.5rem;
+}
+#vision .vision-content p {
+  padding: 70px 140px;
+  font-size: clamp(12px, 3vw, 20px);
+}
+.core-values-wrapper {
+  padding: 6rem 0;
+}
+.core-values-wrapper h3 {
+  color: var(--white-color);
+  font-size: 50px;
+}
+.core-values-wrapper h6 {
+  color: var(--white-color);
+}
+.core-values-wrapper p {
+  font-size: 15px;
+}
+/*message*/
+.message-wrapper {
+  padding: 6rem 0;
+}
+.message-wrapper .container > div:first-child > div:nth-child(1) {
+  z-index: 1;
+}
+.message-wrapper .container > div:first-child > div:nth-child(2) {
+  margin-left: 43%;
+  padding: 70px 55px;
+}
+.message-wrapper .container > div:first-child > div:nth-child(2) p {
+  margin-right: 200px;
+}
+.message-wrapper .container figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*contact-us*/
+.contact-us-wrapper {
+  padding: 6.5girem 0;
+}
+
+.contact-us-wrapper
+  .container
+  div:first-child
+  > div:first-child
+  > div:nth-child(2)
+  p {
+  font-size: 19px;
+}
+.form-control {
+  border-radius: 0;
+}
+.contact-us-wrapper span {
+  color: #999999;
+  font-size: 12px;
+}
+.contact-us-wrapper figure img {
+  height: auto;
+  max-width: 100%;
+}
+/*footer*/
+.footer-wrapper {
+  padding-top: 5rem;
+}
+.footer-wrapper > div:first-child > div:first-child > h4 {
+  color: var(--light-green-color);
+  font-size: clamp(15px, 4vw, 30px);
+  font-weight: 400;
+}
+.footer-wrapper > div:first-child > div:first-child > div:nth-child(3) ul {
+  gap: 30px;
+}
+.footer-wrapper > div:nth-child(2) ul li a {
+  color: var(--white-color);
+  padding: 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer-wrapper > div:nth-child(2) ul li:nth-child(2) {
+  border-right: 2px solid var(--light-green-color);
+  border-left: 2px solid var(--light-green-color);
+}

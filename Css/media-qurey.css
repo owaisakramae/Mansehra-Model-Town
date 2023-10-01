@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+  .content-wrapper
+    .container
+    .banner-1
+    > div:first-child
+    > div:nth-child(2)
+    > div {
+    padding: 60px;
+  }
+  .banner-1 {
+    padding: 40px 155px;
+  }
+  #services {
+    padding: 4rem 0;
+  }
+  #services .card {
+    padding: 2rem 0.5rem 5rem 0.5rem;
+  }
+  #vision {
+    padding-top: 8rem;
+    padding-bottom: 6.5rem;
+  }
+  #vision .vision-content p {
+    padding: 50px 145px;
+  }
+}
+@media (max-width: 993px) {
+  .content-wrapper .container .banner-1 > div:first-child > div:nth-child(2) {
+    margin-top: 5%;
+  }
+  .banner-1 {
+    padding: 51px 72px;
+  }
+  .content-wrapper
+    .container
+    .banner-1
+    > div:first-child
+    > div:nth-child(2)
+    > div {
+    margin-left: 27px;
+    padding: 24px;
+  }
+}
+@media (max-width: 768px) {
+}
