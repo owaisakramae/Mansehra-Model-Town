@@ -8,6 +8,7 @@
   --gradient-color-1: #01985c;
   --gradient-color-2: #7ecdaa;
   --light-green-color: #8daeaa;
+  --bg-color-banner-2: #1d4734;
 }
 .gradient-1 {
   background: linear-gradient(
@@ -133,7 +134,7 @@ h2 {
   background-size: 100px 100%;
 }
 /*services*/
-#services {
+.services-wrapper {
   padding: 5.5rem 0;
 }
 #services .card {
