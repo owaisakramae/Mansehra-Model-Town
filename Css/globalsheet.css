@@ -67,7 +67,7 @@ h1 {
   font-weight: 700;
 }
 p {
-  font-size: clamp(12px, 3vw, 17px);
+  font-size: clamp(12px, 3vw, 16px);
 }
 h2 {
   font-size: (30px, 3vw, 48px);
@@ -113,19 +113,21 @@ h2 {
 
 /*banner-1*/
 .banner-1-wrapper {
-  padding: 85px 155px;
+  padding: 160px 0px 70px 0px;
 }
 .banner-1-wrapper .container > div:first-child > div:nth-child(2) {
   background-color: var(--secondary-color);
-  margin-left: 42%;
-  margin-top: 7%;
 }
 .banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
-  padding: 80px 95px 70px 80px;
+  padding: 115px 146px 115px 115px;
+}
+.banner-1-wrapper .container {
+  max-width: 1024px !important;
+}
+.banner-1-wrapper figure{
+  margin-top: -90px;
 }
 .banner-1-wrapper {
-  width: 100%;
-  height: 100%;
   background-image: linear-gradient(
     to right,
     rgba(175, 190, 188, 1) 1px,
