@@ -94,10 +94,12 @@ h2 {
 }
 
 .carousel-control-prev {
+  position: absolute;
   left: 41%;
   bottom: -86%;
 }
 .carousel-control-next {
+  position: absolute;
   right: 41%;
   bottom: -86%;
 }
