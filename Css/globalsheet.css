@@ -417,7 +417,7 @@ h5{
     padding: 34px 15px 19px 34px;
 }
 .banner-1-wrapper img{
-  max-width: 50.4%;
+  max-width: 73% !important;
 }
 #vision .vision-content p {
     padding: 10px 30px !important;
@@ -437,7 +437,7 @@ h5{
 
 }
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 475px){
   h1{
     font-size: 26px !important;
   }
