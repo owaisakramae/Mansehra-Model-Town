@@ -168,8 +168,13 @@ p {
 .services-wrapper {
   padding: 90px 0;
 }
+.services-wrapper p{
+      font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
 .services-wrapper .card {
-  padding: 55px 7px 100px 7px;
+    padding: 60px 25px 100px 25px;
 }
 .services-wrapper .card:hover {
   background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);
