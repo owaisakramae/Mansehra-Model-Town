@@ -119,6 +119,9 @@ p {
 .carousel-indicators .active {
   background-color: var(--accent-color);
 }
+.hero-section{
+  overflow: hidden;
+}
 
 .carousel-control-prev {
   position: absolute;
@@ -303,4 +306,142 @@ p {
 .footer-wrapper > div:nth-child(2) ul li:nth-child(2) {
   border-right: 2px solid var(--light-green-color);
   border-left: 2px solid var(--light-green-color);
+}
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+}
+h2{
+font-size: 36px !important;
+}
+.vision-content h2 {
+    font-size: 36px !important;
+}
+h5{
+  font-size: 20px;
+}
+
+.btn-3 {
+    padding: 18px 46px;
+}
+.carousel-caption p {
+    margin-right: 30px;
+}
+.carousel-control-next {
+    right: 40%;
+    bottom: -80%;
+}
+.carousel-control-prev {
+    left: 40%;
+    bottom: -80%;
+}
+.banner-1-wrapper .container {
+    max-width: 930px !important;
+}.banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
+    padding: 40px 15px 40px 130px;
+}.banner-1-wrapper {
+    padding: 160px 0px 160px 0px;
+}
+.services-wrapper .card {
+    padding: 40px 25px 40px 25px;
+}
+.vision-wrapper {
+    padding: 80px 0px 80px 0px;
+}
+.vision-para {
+    margin-top: 0px;
+}
+.core-values-wrapper h3 {
+    font-size: 36px;
+}
+.message-wrapper {
+    padding: 4rem 20px;
+}
+.box-2 {
+    padding: 60px 20px 60px 84px;
+}
+.message-wrapper .container > div:first-child > div:nth-child(2) p {
+    margin-right: 50px;
+}
+.footer-wrapper h4 {
+    font-size: 22px;
+    line-height: 32px;
+}
+.footer-wrapper > div:nth-child(2) ul li a {
+    padding: 0 40px;
+    font-size: 18px;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+  h1{
+    font-size: 30px;
+  }
+  .carousel-caption p {
+    margin-right: 0;
+}
+.btn-3 {
+    padding: 12px 30px;
+}
+.carousel-control-next, .carousel-control-prev  {
+
+    bottom: -76%;
+}
+.carousel-caption {
+    top: 14%;
+
+}
+.banner-1-wrapper figure {
+    margin-top: 0px;
+}
+.banner-1-wrapper {
+    padding: 100px 20px 100px 20px;
+}
+
+.banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
+    padding: 34px 15px 19px 34px;
+}
+.banner-1-wrapper img{
+  max-width: 50.4%;
+}
+#vision .vision-content p {
+    padding: 10px 30px !important;
+    font-size: 16px;
+}
+.core-values-wrapper {
+    padding: 5rem 0;
+}
+.core-values-wrapper h3 {
+    font-size: 28px;
+        top: 14px !important;
+    left: 58px !important;
+}
+
+.contact-us-wrapper {
+    padding: 6.5rem 20px;
+
+}
+}
+@media screen and (max-width: 1024px){
+  h1{
+    font-size: 26px !important;
+  }
+  .carousel-caption {
+    top: 0%;
+        max-width: 100%;
+}
+.carousel-inner {
+    height: 54vh;
+}
+.carousel-item {
+    height: 100%;
+}
+.carousel-inner img{
+  height: 100%;
+}
+.carousel-control-next, .carousel-control-prev  {
+  right:  unset !important;
+    bottom: unset !important;
+}
 }
