@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
   --primary-color: #ffff;
   --secondary-color: #154841;
@@ -9,6 +12,10 @@
   --gradient-color-2: #7ecdaa;
   --light-green-color: #8daeaa;
   --bg-color-banner-2: #1d4734;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
 }
 .gradient-1 {
   background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);
@@ -70,7 +77,7 @@ p {
   font-size: clamp(12px, 3vw, 16px);
 }
 h2 {
-  font-size: (30px, 3vw, 48px);
+  font-size: clamp(30px, 3vw, 48px);
 }
 
 /*navbar*/
@@ -145,16 +152,35 @@ h2 {
   padding: 30px 0;
 }
 /*vision*/
-#vision {
-  padding-top: 11rem;
-  padding-bottom: 10.5rem;
+.vision-content h2{
+  font-size: 48px !important;
+  line-height: 72px;
+  font-weight: 600;
 }
+.vision-para {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+
+.vision-wrapper{
+  background-image: url('../Assets/img/our-vision.png');
+  background-repeat: no-repeat;
+  background-size: cover; 
+   padding: 163px 0px 247px 0px;
+   background-position: center center;
+}
+
 #vision .vision-content p {
-  padding: 70px 140px;
-  font-size: clamp(12px, 3vw, 20px);
+      font-size: clamp(12px, 3vw, 18px);
+    line-height: 27px;
 }
 .core-values-wrapper {
   padding: 6rem 0;
+  background-color: #000000;
+}
+.core-values-heading{
+  margin-bottom: 80px;
 }
 .core-values-wrapper h3 {
   color: var(--white-color);
@@ -170,15 +196,19 @@ h2 {
 .message-wrapper {
   padding: 6rem 0;
 }
+.message-wrapper h2{
+  font-size: 36px !important;
+}
 .message-wrapper .container > div:first-child > div:nth-child(1) {
   z-index: 1;
 }
-.message-wrapper .container > div:first-child > div:nth-child(2) {
-  margin-left: 43%;
+.box-2{
+  background-color: var(--secondary-color);
   padding: 70px 55px;
+      margin-left: -62px;
 }
 .message-wrapper .container > div:first-child > div:nth-child(2) p {
-  margin-right: 200px;
+  margin-right: 160px;
 }
 .message-wrapper .container figure img {
   max-width: 100%;
@@ -188,6 +218,7 @@ h2 {
 /*contact-us*/
 .contact-us-wrapper {
   padding: 6.5rem 0;
+  background-color: #000000;
 }
 
 .contact-us-wrapper
@@ -210,8 +241,15 @@ h2 {
   max-width: 100%;
 }
 /*footer*/
+.footer-wrapper h4{
+  color: white !important;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 40px;
+}
 .footer-wrapper {
   padding-top: 5rem;
+  background-color: var(--secondary-color);
 }
 .footer-wrapper > div:first-child > div:first-child > h4 {
   color: var(--light-green-color);
