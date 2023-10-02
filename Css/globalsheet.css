@@ -23,7 +23,7 @@
   background-color: var(--secondary-color);
 }
 .container {
-  max-width: 1330px;
+  max-width: 1250px;
 }
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .show > .nav-link {
@@ -32,6 +32,8 @@
 }
 .navbar-light .navbar-nav .nav-link {
   color: var(--accent-color);
+  font-size: 18px;
+  padding-right: 17px;
 }
 .btn-1 {
   background-color: var(--accent-color);
@@ -40,10 +42,11 @@
   border-radius: 0%;
 }
 .btn-2 {
-  padding: 7px 34px;
+  padding: 7px 43px;
 }
 .btn-3 {
-  padding: 14px 50px;
+  padding: 23px 70px;
+  font-weight: 700;
 }
 .btn-4 {
   padding: 15px 25px;
@@ -58,6 +61,10 @@ h2,
 p {
   color: var(--white-color);
 }
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
 p {
   font-size: clamp(12px, 3vw, 17px);
 }
@@ -68,6 +75,9 @@ h2 {
 /*navbar*/
 .navbar-wrapper {
   border-bottom: 3px solid var(--accent-color);
+}
+.navbar-brand {
+  margin-right: -1rem;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -90,36 +100,37 @@ h2 {
   right: 41%;
   bottom: -86%;
 }
-/* .carousel-caption {
-  position: absolute;
-  top: 50%;
-  left: 0%;
+.carousel-caption {
+  top: 24%;
+  left: 7%;
 
   max-width: 50%;
-} */
-
-/*content*/
-.content-wrapper {
-  background-image: url(../Assets/img/background.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
+.carousel-caption p {
+  margin-right: 160px;
+}
+
 /*banner-1*/
-.banner-1 {
+.banner-1-wrapper {
   padding: 85px 155px;
 }
-.content-wrapper .container .banner-1 > div:first-child > div:nth-child(2) {
+.banner-1-wrapper .container > div:first-child > div:nth-child(2) {
   background-color: var(--secondary-color);
   margin-left: 42%;
   margin-top: 7%;
 }
-.content-wrapper
-  .container
-  .banner-1
-  > div:first-child
-  > div:nth-child(2)
-  > div {
+.banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
   padding: 80px 95px 70px 80px;
+}
+.banner-1-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(175, 190, 188, 1) 1px,
+    transparent 1px
+  );
+  background-size: 100px 100%;
 }
 /*services*/
 #services {

@@ -66,7 +66,12 @@
       </div>
     </section>
     <section class="hero-section">
-      <div id="carouselExampleDark" class="carousel" data-bs-ride="carousel">
+      <div
+        id="carouselExampleDark"
+        class="carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="false"
+      >
         <ol class="carousel-indicators">
           <li
             data-bs-target="#carouselExampleDark"
@@ -99,17 +104,19 @@
           <span class="visually-hidden">Next</span>
         </button>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+        <div class="carousel-inner position-relative">
+          <div class="carousel-item active" data-bs-interval="false">
             <img
               src="./Assets/img/hero-img-1.png"
               class="d-block w-100"
               alt="hero image 1"
             />
-            <div class="carousel-caption">
-              <div class="container d-flex flex-column align-items-start text">
-                <h1>Building Dreams & <br />Creating Communities</h1>
-                <p>
+            <div class="carousel-caption position-absolute">
+              <div class="d-flex flex-column align-items-start text-start">
+                <h1 class="mb-3">
+                  Building Dreams & <br />Creating Communities
+                </h1>
+                <p class="mb-5">
                   At Mansehra Model Town, we have meticulosuly planned every
                   aspect of our community to offer you a life of comfort,
                   convenience, and connection. Here are some key features of our
@@ -119,7 +126,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item" data-bs-interval="false">
             <img
               src="./Assets/img/hero-img-2.png"
               class="d-block w-100"
@@ -148,38 +155,41 @@
         </div>
       </div>
     </section>
-    <div class="content-section">
-      <div class="content-wrapper">
+    <section class="banner-1-section">
+      <div class="banner-1-wrapper">
         <div class="container">
-          <div class="banner-1">
-            <div class="row position-relative">
-              <div class="col-6 col-lg-6 col-md-12 col-sm-12 position-absolute">
-                <figure>
-                  <img
-                    src="./Assets/img/Rectangle-6996.png"
-                    alt="banner image"
-                    style="max-width: 100%; height: auto"
-                  />
-                </figure>
-              </div>
-              <div class="col-6 col-lg-6 col-md-12 col-sm-12 rounded">
-                <div>
-                  <h2>Our Mission</h2>
-                  <p class="mt-4">
-                    At Mansehra Model Town, our mission is to create vibrant,
-                    sustainable communities that offer an exceptional quality of
-                    life for residents. We are committed to providing
-                    well-planned, environmentally conscious, and inclusive
-                    housing solutions that cater to the diverse needs of our
-                    residents. Through innovation, integrity, and community
-                    engagement, we aim to build not just houses, but homes where
-                    dreams come to life.
-                  </p>
-                </div>
+          <div class="row position-relative">
+            <div class="col-6 col-lg-6 col-md-12 col-sm-12 position-absolute">
+              <figure>
+                <img
+                  src="./Assets/img/Rectangle-6996.png"
+                  alt="banner image"
+                  style="max-width: 100%; height: auto"
+                />
+              </figure>
+            </div>
+            <div class="col-6 col-lg-6 col-md-12 col-sm-12 rounded">
+              <div>
+                <h2>Our Mission</h2>
+                <p class="mt-4">
+                  At Mansehra Model Town, our mission is to create vibrant,
+                  sustainable communities that offer an exceptional quality of
+                  life for residents. We are committed to providing
+                  well-planned, environmentally conscious, and inclusive housing
+                  solutions that cater to the diverse needs of our residents.
+                  Through innovation, integrity, and community engagement, we
+                  aim to build not just houses, but homes where dreams come to
+                  life.
+                </p>
               </div>
             </div>
           </div>
-
+        </div>
+      </div>
+    </section>
+    <div class="content-section">
+      <div class="content-wrapper">
+        <div class="container">
           <section id="services">
             <div class="services-wrapper">
               <div class="row mb-4">
