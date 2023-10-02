@@ -11,18 +11,18 @@
   --bg-color-banner-2: #1d4734;
 }
 .gradient-1 {
-  background: linear-gradient(
-    to right,
-    var(--gradient-color-1),
-    var(--gradient-color-2)
-  );
+  background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);
 }
 .bg-dark-green {
   background-color: var(--bg-dark-green);
 }
+.bg-banner-2 {
+  background-color: var(--bg-color-banner-2);
+}
 .bg-secondary-color {
   background-color: var(--secondary-color);
 }
+
 .container {
   max-width: 1250px;
 }
@@ -126,7 +126,7 @@ h2 {
 .banner-1-wrapper .container {
   max-width: 1024px !important;
 }
-.banner-1-wrapper figure{
+.banner-1-wrapper figure {
   margin-top: -90px;
 }
 .banner-1-wrapper {
@@ -139,10 +139,10 @@ h2 {
 }
 /*services*/
 .services-wrapper {
-  padding: 5.5rem 0;
+  padding: 90px 0;
 }
-#services .card {
-  padding: 4rem 0.5rem 7rem 0.5rem;
+.services-wrapper .card {
+  padding: 30px 0;
 }
 /*vision*/
 #vision {
