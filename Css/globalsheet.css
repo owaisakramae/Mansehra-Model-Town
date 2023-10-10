@@ -37,32 +37,56 @@ body {
 .bg-secondary-color {
   background-color: var(--secondary-color);
 }
+.navbar-light .navbar-nav .nav-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-.container {
-  max-width: 1250px;
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: var(--accent-color) !important;  /* Added fallback color */
+    font-size: 18px;
+    padding-right: 17px;
+    transition: 0.5s ease;
 }
-.navbar-light .navbar-nav .nav-link:hover {
-  font-weight: 700;
-  color: var(--accent-color);
+
+/* Adjusting the ::before pseudo-element to represent a bottom border */
+.navbar-light .navbar-nav .nav-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;  /* Position it at the bottom */
+    left: 0;
+    width: 0;  /* Initial state: border is not visible */
+    height: 2px;  /* Border thickness */
+    background: var(--accent-color);  /* Added fallback color */
+    transition: width 0.3s;
 }
-.navbar-light .navbar-nav .nav-link {
-  color: var(--accent-color);
-  font-size: 18px;
-  padding-right: 17px;
-  transition: font-weight 0.5s ease, color 0.5s ease;
+
+/* On hover, the border expands from the left to the right */
+.navbar-light .navbar-nav .nav-item:hover::before {
+    width: 100%;
 }
+
+
+
+
+
 .btn-1 {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  font-weight: 600;
-  border-radius: 0%;
+  background-color: var(--accent-color) !important;
+  color: var(--white-color) !important;
+  font-weight: 600 !important;
+  border-radius: 0% !important;
+}
+.btn:hover{
+  color: black !important
+  ;
 }
 .btn-2 {
-  padding: 7px 43px;
+  padding: 7px 43px !important;
 }
 .btn-3 {
-  padding: 23px 70px;
-  font-weight: 700;
+  padding: 23px 70px !important;
+  font-weight: 700 !important;
 }
 .btn-4 {
   padding: 15px 25px;
@@ -75,28 +99,27 @@ ul li {
 h1,
 h2,
 p {
-  color: var(--white-color);
+  color: var(--white-color);  font-family: "Poppins", sans-serif; font-weight: 400;
 }
 h1 {
-  font-size: 56px;
-  font-weight: 700;
+  font-size: 52px !important;
+  font-weight: 700 !important;
 }
 p {
   font-size: clamp(12px, 3vw, 16px);
 }
 h2 {
-  font-size: clamp(30px, 3vw, 48px);
-  font-size: 44.44px;
+  font-size: clamp(30px, 3vw, 48px)  !important;
+  font-size: 44.44px !important;
 }
 h5 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 36px;
+  font-size: 24px  !important;
+  font-weight: 600  !important;
+  line-height: 36px  !important;
 }
 p {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
+  font-weight: 400  !important;
+  line-height: 21px  !important;
 }
 
 /*navbar*/
@@ -123,14 +146,14 @@ p {
 }
 
 .carousel-control-prev {
-  position: absolute;
-  left: 41%;
-  bottom: -86%;
+  position: absolute !important;
+  left: 41% !important;
+  bottom: -86% !important;
 }
 .carousel-control-next {
-  position: absolute;
-  right: 41%;
-  bottom: -86%;
+  position: absolute !important; 
+  right: 41% !important;
+  bottom: -86% !important;
 }
 .carousel-caption {
   top: 24%;
@@ -139,7 +162,7 @@ p {
   max-width: 50%;
 }
 .carousel-caption p {
-  margin-right: 160px;
+  width: 566px;
 }
 
 /*banner-1*/
@@ -171,7 +194,7 @@ p {
 
 /*services*/
 .services-wrapper {
-  padding: 90px 0;
+  padding: 90px 20px;
 }
 .services-wrapper p {
   font-size: 14px;
@@ -180,9 +203,11 @@ p {
 }
 .services-wrapper .card {
   padding: 60px 25px 100px 25px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
 }
 .services-wrapper .card:hover {
-  background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);
+  background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);transition: 0.5s ease-in;
 }
 .services-wrapper .card:hover figure {
   background: var(--white-color);
@@ -212,8 +237,9 @@ p {
 }
 
 #vision .vision-content p {
-  font-size: clamp(12px, 3vw, 18px);
-  line-height: 27px;
+  font-size: 18px ;
+  line-height: 27px !important;
+  font-weight: 400;
 }
 .core-values-wrapper {
   padding: 6rem 0;
@@ -245,7 +271,7 @@ p {
 .box-2 {
   background-color: var(--secondary-color);
   padding: 70px 55px;
-  margin-left: -62px;
+  margin-left: -120px;
 }
 .message-wrapper .container > div:first-child > div:nth-child(2) p {
   margin-right: 160px;
@@ -335,6 +361,11 @@ p {
   h1 {
     font-size: 40px;
   }
+  .carousel-caption {
+    top: 14%;
+    left: 4% !important;
+    max-width: 70%;
+}
   h2 {
     font-size: 36px !important;
   }
@@ -360,7 +391,7 @@ p {
     bottom: -80%;
   }
   .banner-1-wrapper .container {
-    max-width: 930px !important;
+    max-width: 370px !important;
   }
   .banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
     padding: 40px 15px 40px 130px;
@@ -399,15 +430,35 @@ p {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
+  h5 {
+    font-size: 20px !important;
+}
+   h2 {
+    font-size: 30px !important;
+  }
+  .box-2 {
+    padding: 60px 20px 60px 104px !important;
+}
+  .contact-us-wrapper figure{
+    text-align: center;    font-size: 18px;
+  }
+  .nav-text li a {
+    padding: 0 20px;
+}
+.carousel-indicators {
+    width: 10px;
+    height: 10px;
+
+}
   .carousel-caption p {
     margin-right: 0;
   }
   .btn-3 {
-    padding: 12px 30px;
+    padding: 12px 30px !important;
   }
   .carousel-control-next,
   .carousel-control-prev {
@@ -417,17 +468,17 @@ p {
     top: 14%;
   }
   .banner-1-wrapper figure {
-    margin-top: 0px;
+    margin-top: -20px;margin: -20px;
   }
   .banner-1-wrapper {
-    padding: 100px 20px 100px 20px;
+    padding: 80px 20px 80px 20px;
   }
 
   .banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
     padding: 34px 15px 19px 34px;
   }
   .banner-1-wrapper img {
-    max-width: 73% !important;
+    max-width: 79% !important;
   }
   #vision .vision-content p {
     padding: 10px 30px !important;
@@ -445,17 +496,29 @@ p {
   .contact-us-wrapper {
     padding: 6.5rem 20px;
   }
+  .message-wrapper h2 {
+    font-size: 28px !important;
+}
+.message-wrapper .container > div:first-child > div:nth-child(2) p {
+    margin-right: 14px;
+}
 }
 @media screen and (max-width: 475px) {
   h1 {
-    font-size: 26px !important;
+    font-size: 25px !important;
+    text-align: center;
   }
+  .carousel-caption p {
+    text-align: center;
+    margin-bottom: 20px !important;width: 360px;
+}
   .carousel-caption {
-    top: 7%;
     max-width: 100%;
+    left: 0% !important;
+    right: 0% !important;
   }
   .carousel-inner {
-    height: 57vh;
+    height: 43vh;
   }
   .carousel-item {
     height: 100%;
@@ -482,7 +545,14 @@ p {
     padding: 50px 10px 50px 10px;
 }
 h2{
-  font-size: 28px !important;
+  font-size: 22px !important;
+  text-align: center;
+}
+h5{
+  text-align: center;
+}
+p{
+  text-align: center;
 }
 .services-wrapper {
     padding: 50px 10px;
@@ -511,5 +581,30 @@ h2{
 .footer-wrapper h4 {
     font-size: 18px;
     line-height: 26px;
+}
+.carousel-caption > div {
+  align-items: center !important;
+
+}
+.navbar-brand{
+  width: 80% !important;
+}
+.banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
+    padding: 20px;
+}
+.box-2{
+  margin-left: 0px !important;
+  padding: 30px !important;
+}
+.carousel-control-next {
+    right: -12px !important;
+    bottom: 0 !important;
+}
+.carousel-control-prev{
+    bottom: 0 !important;
+    left: -12px !important;
+}
+.banner-1-wrapper figure {
+    margin-bottom: -180px;
 }
 }
