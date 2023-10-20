@@ -38,38 +38,34 @@ body {
   background-color: var(--secondary-color);
 }
 .navbar-light .navbar-nav .nav-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link {
-    color: var(--accent-color) !important;  /* Added fallback color */
-    font-size: 18px;
-    padding-right: 17px;
-    transition: 0.5s ease;
+  color: var(--accent-color) !important; /* Added fallback color */
+  font-size: 18px;
+  padding-right: 17px;
+  transition: 0.5s ease;
 }
 
 /* Adjusting the ::before pseudo-element to represent a bottom border */
 .navbar-light .navbar-nav .nav-item::before {
-    content: "";
-    position: absolute;
-    bottom: 0;  /* Position it at the bottom */
-    left: 0;
-    width: 0;  /* Initial state: border is not visible */
-    height: 2px;  /* Border thickness */
-    background: var(--accent-color);  /* Added fallback color */
-    transition: width 0.3s;
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position it at the bottom */
+  left: 0;
+  width: 0; /* Initial state: border is not visible */
+  height: 2px; /* Border thickness */
+  background: var(--accent-color); /* Added fallback color */
+  transition: width 0.3s;
 }
 
 /* On hover, the border expands from the left to the right */
 .navbar-light .navbar-nav .nav-item:hover::before {
-    width: 100%;
+  width: 100%;
 }
-
-
-
-
 
 .btn-1 {
   background-color: var(--accent-color) !important;
@@ -77,7 +73,7 @@ body {
   font-weight: 600 !important;
   border-radius: 0% !important;
 }
-.btn:hover{
+.btn:hover {
   color: black !important
   ;
 }
@@ -99,7 +95,9 @@ ul li {
 h1,
 h2,
 p {
-  color: var(--white-color);  font-family: "Poppins", sans-serif; font-weight: 400;
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 h1 {
   font-size: 52px !important;
@@ -109,17 +107,17 @@ p {
   font-size: clamp(12px, 3vw, 16px);
 }
 h2 {
-  font-size: clamp(30px, 3vw, 48px)  !important;
+  font-size: clamp(30px, 3vw, 48px) !important;
   font-size: 44.44px !important;
 }
 h5 {
-  font-size: 24px  !important;
-  font-weight: 600  !important;
-  line-height: 36px  !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 36px !important;
 }
 p {
-  font-weight: 400  !important;
-  line-height: 21px  !important;
+  font-weight: 400 !important;
+  line-height: 21px !important;
 }
 
 /*navbar*/
@@ -151,7 +149,7 @@ p {
   bottom: -86% !important;
 }
 .carousel-control-next {
-  position: absolute !important; 
+  position: absolute !important;
   right: 41% !important;
   bottom: -86% !important;
 }
@@ -207,7 +205,8 @@ p {
   cursor: pointer;
 }
 .services-wrapper .card:hover {
-  background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);transition: 0.5s ease-in;
+  background: linear-gradient(124.64deg, #00985b 0%, #f3fff4 186%);
+  transition: 0.5s ease-in;
 }
 .services-wrapper .card:hover figure {
   background: var(--white-color);
@@ -237,7 +236,7 @@ p {
 }
 
 #vision .vision-content p {
-  font-size: 18px ;
+  font-size: 18px;
   line-height: 27px !important;
   font-weight: 400;
 }
@@ -341,7 +340,7 @@ p {
   gap: 27px;
 }
 .footer-wrapper > div:first-child > div:first-child {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .nav-text {
   padding-top: 34px;
@@ -356,6 +355,25 @@ p {
   transform: translateY(-3px);
   transition: 0.5s ease all;
 }
+/*office Address*/
+.office-address {
+  gap: 200px;
+}
+.office-address address,
+.office-address h5 {
+  font-size: 20px !important;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500 !important;
+  margin-bottom: 0;
+}
+
+.office-address-name {
+  color: #e09b6b !important;
+}
+.office-address h5 a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
 
 @media screen and (max-width: 1024px) {
   h1 {
@@ -365,7 +383,7 @@ p {
     top: 14%;
     left: 4% !important;
     max-width: 70%;
-}
+  }
   h2 {
     font-size: 36px !important;
   }
@@ -436,24 +454,24 @@ p {
   }
   h5 {
     font-size: 20px !important;
-}
-   h2 {
+  }
+  h2 {
     font-size: 30px !important;
   }
   .box-2 {
     padding: 60px 20px 60px 104px !important;
-}
-  .contact-us-wrapper figure{
-    text-align: center;    font-size: 18px;
+  }
+  .contact-us-wrapper figure {
+    text-align: center;
+    font-size: 18px;
   }
   .nav-text li a {
     padding: 0 20px;
-}
-.carousel-indicators {
+  }
+  .carousel-indicators {
     width: 10px;
     height: 10px;
-
-}
+  }
   .carousel-caption p {
     margin-right: 0;
   }
@@ -468,7 +486,8 @@ p {
     top: 14%;
   }
   .banner-1-wrapper figure {
-    margin-top: -20px;margin: -20px;
+    margin-top: -20px;
+    margin: -20px;
   }
   .banner-1-wrapper {
     padding: 80px 20px 80px 20px;
@@ -498,10 +517,14 @@ p {
   }
   .message-wrapper h2 {
     font-size: 28px !important;
-}
-.message-wrapper .container > div:first-child > div:nth-child(2) p {
+  }
+  .message-wrapper .container > div:first-child > div:nth-child(2) p {
     margin-right: 14px;
-}
+  }
+  .office-address {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 475px) {
   h1 {
@@ -510,8 +533,9 @@ p {
   }
   .carousel-caption p {
     text-align: center;
-    margin-bottom: 20px !important;width: 360px;
-}
+    margin-bottom: 20px !important;
+    width: 360px;
+  }
   .carousel-caption {
     max-width: 100%;
     left: 0% !important;
@@ -526,7 +550,7 @@ p {
   .carousel-inner img {
     height: 100%;
   }
- 
+
   .nav-text {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -537,74 +561,79 @@ p {
   }
   .banner-1-wrapper figure {
     position: unset !important;
-}
-.banner-1-wrapper img {
+  }
+  .banner-1-wrapper img {
     max-width: 100% !important;
-}
-.banner-1-wrapper {
+  }
+  .banner-1-wrapper {
     padding: 50px 10px 50px 10px;
-}
-h2{
-  font-size: 22px !important;
-  text-align: center;
-}
-h5{
-  text-align: center;
-}
-p{
-  text-align: center;
-}
-.services-wrapper {
+  }
+  h2 {
+    font-size: 22px !important;
+    text-align: center;
+  }
+  h5 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .services-wrapper {
     padding: 50px 10px;
-}
-.services-wrapper .card {
+  }
+  .services-wrapper .card {
     padding: 25px;
-}
-.vision-wrapper {
+  }
+  .vision-wrapper {
     padding: 50px 10px;
-}
-#vision .vision-content p {
+  }
+  #vision .vision-content p {
     font-size: 14px;
-}
-.core-values-wrapper {
+  }
+  .core-values-wrapper {
     padding: 50px 10px;
-}
-.core-values-heading {
+  }
+  .core-values-heading {
     margin-bottom: 40px;
-}
-.contact-us-wrapper {
+  }
+  .contact-us-wrapper {
     padding: 50px 10px;
-}
-.nav-text li a {
+  }
+  .nav-text li a {
     padding: 0px 15px;
-}
-.footer-wrapper h4 {
+  }
+  .footer-wrapper h4 {
     font-size: 18px;
     line-height: 26px;
-}
-.carousel-caption > div {
-  align-items: center !important;
-
-}
-.navbar-brand{
-  width: 80% !important;
-}
-.banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
+  }
+  .carousel-caption > div {
+    align-items: center !important;
+  }
+  .navbar-brand {
+    width: 80% !important;
+  }
+  .banner-1-wrapper .container > div:first-child > div:nth-child(2) > div {
     padding: 20px;
-}
-.box-2{
-  margin-left: 0px !important;
-  padding: 30px !important;
-}
-.carousel-control-next {
+  }
+  .box-2 {
+    margin-left: 0px !important;
+    padding: 30px !important;
+  }
+  .carousel-control-next {
     right: -12px !important;
     bottom: 0 !important;
-}
-.carousel-control-prev{
+  }
+  .carousel-control-prev {
     bottom: 0 !important;
     left: -12px !important;
-}
-.banner-1-wrapper figure {
+  }
+  .banner-1-wrapper figure {
     margin-bottom: -180px;
-}
+  }
+  .office-address address,
+  .office-address h5 {
+    font-size: 14px !important;
+    text-align: left;
+    line-height: 28px !important;
+  }
 }
