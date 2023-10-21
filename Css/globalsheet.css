@@ -282,7 +282,7 @@ p {
   background-color: var(--secondary-color);
   padding: 70px 55px;
   margin-left: -90px;
-  margin-top: -4%;
+  margin-top: -2%;
 }
 .message-wrapper .container > div:first-child > div:nth-child(2) p {
   margin-right: 90px;
