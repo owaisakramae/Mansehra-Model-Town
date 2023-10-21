@@ -127,10 +127,12 @@ p {
 .navbar-brand {
   margin-right: -1rem;
 }
-
+.carousel-indicators {
+  margin-bottom: 0 !important;
+}
 .carousel-indicators [data-bs-target] {
-  width: 8px;
-  height: 8px;
+  width: 12px !important;
+  height: 12px !important;
   border-radius: 50%;
   background-color: var(--white-color);
   opacity: 1;
@@ -264,6 +266,9 @@ p {
   font-size: 15px;
 }
 /*message*/
+.message-wrapper .container {
+  max-width: 1150px;
+}
 .message-wrapper {
   padding: 6rem 0;
 }
@@ -276,10 +281,11 @@ p {
 .box-2 {
   background-color: var(--secondary-color);
   padding: 70px 55px;
-  margin-left: -120px;
+  margin-left: -90px;
+  margin-top: -4%;
 }
 .message-wrapper .container > div:first-child > div:nth-child(2) p {
-  margin-right: 160px;
+  margin-right: 90px;
 }
 .message-wrapper .container figure img {
   max-width: 100%;
