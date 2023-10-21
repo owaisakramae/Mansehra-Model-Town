@@ -559,7 +559,7 @@ p {
     max-width: 100%;
     left: 0% !important;
     right: 0% !important;
-    top: 0;
+    top: 5%;
   }
   .btn-3 {
     padding: 8px 20px !important;
@@ -596,6 +596,7 @@ p {
   }
   .banner-1-wrapper img {
     max-width: 100% !important;
+    margin: 0;
   }
   .banner-1-wrapper {
     padding: 50px 10px 50px 10px;
@@ -665,6 +666,9 @@ p {
   }
   .banner-1-wrapper figure {
     margin: 0;
+  }
+  .ceo-image {
+    max-width: 100% !important;
   }
   .office-address address,
   .office-address h5 {
